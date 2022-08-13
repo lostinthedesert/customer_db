@@ -1,0 +1,15 @@
+#find_customer_div{
+    display: none;
+}
+
+#add_customer_div{
+    display: block;
+}
+
+#find_customer_response{
+    display: none;
+}
+
+#customer_id{
+    text-emphasis: bold; 
+}
