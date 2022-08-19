@@ -4,20 +4,19 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
-        <link href="/main.css" rel="stylesheet">
+        <link href="static/main.css" rel="stylesheet">
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
         crossorigin="anonymous"></script>
-        <script src="/index.js"></script>
         <title>Customer Database</title>
     </head>
     <body>
-        <header>
-            <a id="add_customer" href="">add customer</a> | <a id="find_customer" href="">find customer</a>
-        </header>
-        <div id="add_customer_div">       
-            <h2>Add Customer</h2>
-            <form autocomplete="off" id="customer_form">
+    <header>
+        <a id="add_customer" href="">add customer</a> | <a id="find_customer" href="">find customer</a>
+    </header>
+        <div id="customer_form">       
+            <h2 class="add_customer">Add Customer</h2>
+            <form class="add_customer" autocomplete="off" id="add_form">
             <label for="first_name">First Name: </label><br>
             <input type="text", id="first_name" required><br>
             <label for="last_name">Last Name: </label><br>
@@ -28,21 +27,24 @@
             <input type="email", id="email" required><br>
             <button type="submit" id="submit">Submit</button>
             </form>
-        </div>
 
-        <div id="find_customer_div">
-            <h2>Find Customer</h2>
-            <form autocomplete="off" id="customer_search_form">
+            <h2 class="find_customer">Find Customer</h2>
+            <form class="find_customer" autocomplete="off" id="customer_search_form">
             <label for="last_name">Last Name: </label><br>
             <input type="text", id="search_last_name" required><br><br>
             <button type="submit" id="submit">Submit</button>
         </div>
 
-        <div id="find_customer_response">
-            <label>Search Results: </label><span id="customer_id"></span>
-        </div>
+        <div class="customer_response">
+            <p id="add_response"></p>
 
-        <p id="add_customer_response"></p>
+            <p id="find_customer_response">
+                <label>Search Results: </label><span id="customer_id"></span>
+            </p>
+        </div>
+        
+
+    <script src="static/index.js"></script>    
         
     </body>
 </html>

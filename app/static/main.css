@@ -1,0 +1,31 @@
+#customer_form{
+    display: block;
+}
+
+.find_customer{
+    display: none;
+}
+
+.add_customer{
+    display: block;
+}
+
+#add_customer_form{
+    display: block;
+}
+
+.customer_response{
+    display: none;
+}
+
+#add_response{
+    display: none;
+}
+
+#find_customer_response{
+    display: none;
+}
+
+#customer_id{
+    font-weight: bold; 
+}
