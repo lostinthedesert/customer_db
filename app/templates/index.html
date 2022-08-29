@@ -12,11 +12,12 @@
     </head>
     <body>
     <header>
-        <a id="add_customer" href="">add customer</a> | <a id="find_customer" href="">find customer</a>
+        <a class="add_customerLink" data-id="add_customer" href="">add customer</a> | <a class="find_customerLink" data-id="find_customer" href="">find customer</a>
     </header>
-        <div id="customer_form">       
-            <h2 class="add_customer">Add Customer</h2>
-            <form class="add_customer" autocomplete="off" id="add_form">
+        <div id="customer_form"> 
+            <div class="add_customer selected">      
+            <h2>Add Customer</h2>
+            <form autocomplete="off" id="add_form" data-id="customer_response" data-name="add-form">
             <label for="first_name">First Name: </label><br>
             <input type="text", id="first_name" required><br>
             <label for="last_name">Last Name: </label><br>
@@ -27,20 +28,20 @@
             <input type="email", id="email" required><br>
             <button type="submit" id="submit">Submit</button>
             </form>
-
-            <h2 class="find_customer">Find Customer</h2>
-            <form class="find_customer" autocomplete="off" id="customer_search_form">
+            </div>
+            
+            <div class="find_customer">
+            <h2>Find Customer</h2>
+            <form autocomplete="off" id="customer_search_form" data-id="customer_response" data-name="search-form">
             <label for="last_name">Last Name: </label><br>
             <input type="text", id="search_last_name" required><br><br>
             <button type="submit" id="submit">Submit</button>
+            </form>
+            </div>
         </div>
 
         <div class="customer_response">
-            <p id="add_response"></p>
-
-            <p id="find_customer_response">
-                <label>Search Results: </label><span id="customer_id"></span>
-            </p>
+            <p id="response"></p>       
         </div>
         
 
